@@ -1,0 +1,688 @@
+/*By default settings css*/
+.sr-only{
+	display: none;
+}
+
+.center{
+	display: block;
+	margin: 0 auto;
+}
+
+.margin-top-5{
+	margin-top:5vw;
+}
+
+.margin-bottom-1{
+	margin-bottom:1em;
+}
+.margin-bottom-2{
+	margin-bottom: 2em;
+}
+.margin-top-1{
+	margin-top:1em;
+}
+
+.margin-top-2{
+	margin-top:2em;
+}
+.non-visible{
+	display: none;
+}
+
+.width-80{
+	width:80%;
+	position: relative;
+}
+/*Homepage styling*/
+.smarterLiving-logo{
+	width:40%;
+	margin-bottom:1em;
+}
+.zuc-modal .zuc-modal-subtitle{
+	font-size:1em;
+	margin-top:10px;
+}
+
+.member-login > .zuc-input-group{
+	width:80%;
+	margin-bottom: 1em;
+}
+
+.member-login > .zuc-input-group> .zuc-input-name{
+	color:#36384B;
+
+}
+
+.member-login > .zuc-input-group > input[type=date], input[type=email], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url]{
+	/*background-color: rgba(163, 172, 255,0.2);*/
+	width: 100%;
+    height: 50px;
+    border: 2px solid #54565A;
+    border-radius: 10px;
+    background-color: #fbfbfb;
+    color: #898A8D;
+    font-family: aktiv-grotesk,Helvetica,sans-serif;
+    padding:10px;
+}
+
+.member-login > .zuc-input-group> .zuc-input-link{
+	text-align: left;
+	color:#36384B;
+	margin-top:5px;
+}
+
+.member-login > .form-buttons{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+
+.form-buttons>.zuc-btn-secondary{
+	/*padding:0;*/
+}
+
+
+.remember-me{
+	width:80%;
+	margin-left:2.5em;
+}
+
+.remember-me > input{
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    font-family: 'aktiv-grotesk',Helvetica,sans-serif;
+    font-size:12px;
+    margin:0 auto;
+}
+
+.square-radio{
+    display: block;
+    position: relative;
+    padding-left: 2em;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 1.5vw;
+    user-select: none;
+	-webkit-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;
+}
+/* Hide the browser's default radio button */
+.square-radio > input{
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 0%;
+	
+}
+
+/* On mouse-over, add a grey background color */
+.square-radio:hover input ~ .checkmark{
+	background-color:#ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+
+.square-radio input:checked ~ .checkmark{
+	border:2px solid #434DA0;
+	background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.remember-me input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the indicator (dot/circle) */
+.remember-me .checkmark:after {
+ 	top: 6.5px;
+	left: 6.5px;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #434DA0;
+}
+
+/*Job posting styling*/
+.jobPostings{
+	width:60%;
+	margin: 0 auto;
+}
+
+.jobPostings h5{
+	font-size:2em;
+}
+
+.jobPostings .u-text-uppercase{
+	text-transform:uppercase;
+}
+
+.jobPostings p, .jobPostings ul li{
+	font-size:1.125rem;
+	line-height:1.5;
+}
+
+/*New About us styling*/
+
+.purple-arrows {
+	transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	position: relative;
+	top: 1.5vw;
+	width: 7%;
+	left: 2vw;
+}
+
+	.tip{
+	 display: block;
+    width: 1px;
+    border-left: 20px solid rgba(255,255,255,0.0);
+    border-right: 20px solid rgba(255,255,255,0.0);
+    border-bottom: 30px solid white;
+    position: absolute;
+  }
+
+.value-text-shadow{
+    margin-bottom: 3em;
+    /*box-shadow:0px 0px 1.43vw 5px hsla(0,0%,5%,.2)*/
+    box-shadow: 0px 0px 30px 0px #888888;
+    width: 100%;
+    height: auto;
+    /*border-bottom: 9px solid #434DA0;*/
+    position: relative;
+    background-color: white;
+	}
+
+#value-text{
+		text-align: center;
+	    vertical-align: middle;
+	    padding: 10px;
+	    font-weight: 600;
+	    font-size:1.15em;  
+	}	
+
+.values-container{
+	margin-top:10vw;
+}
+
+
+.values-container .zuc-sixgrid-container{
+	padding:0 16vw;
+}
+.our-values .zuc-sixgrid-item{
+	width:20%;
+	text-align:center;
+	padding:0 0 2vw;
+}
+
+.our-values .zuc-sixgrid-item h6{
+	/*font-size: 1.35rem;*/
+}
+
+
+.our-values .zuc-sixgrid-item img {
+    width: 80%;
+}
+
+
+/*Commitment section*/
+
+.commitments{
+    width: 100%;
+    height:auto;
+}
+
+.commitments .zuc-sixgrid-container{
+	margin-top:2em;
+}
+.commitments > .zuc-title-container > h4{
+	font-size: 1.5em;
+}
+
+
+.commitments section.zuc-sixgrid-container{
+	margin-top: 10vw;
+}
+
+.commitments > h2.u-zuc-indigo{
+	/*margin-left:16vw;*/
+	margin-bottom:1em;
+}
+
+.commitment-featured-content p{
+	margin-top:1em;
+	/*font-size:1.1vw;*/
+}
+
+.circle{
+	border-radius: 50%;
+	-ms-border-radius:50%;
+	-webkit-border-radius:50%;
+	width:50px;
+	height:50px;
+	padding:0;
+	background-color: #434DA0;
+	color:white;
+	text-align: center;
+	 font: 50px Arial, sans-serif;
+  	font-weight:700;
+}
+
+.circle:hover{
+	cursor:pointer;
+}
+
+.plus-sign{
+	line-height:1em;
+}
+
+.minus-sign{
+	line-height:0.8em;
+	margin-bottom:10px;
+}
+
+
+/*Team gallery info*/
+.main-info{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top:4vw;
+}
+.gallery-arrow > a >i{
+	color:#434DA0;
+	/*font-size:100px;*/
+	font-weight:700;
+}
+
+.gallery-image > img{
+	width:100%;
+}
+
+.gallery-text > .subtext-team{
+	font-size: 22px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.gallery-title{
+	color: #434DA0;
+	font-family: PublicoHeadline;
+	font-weight: 700;
+}
+
+.gallery-subtitle{
+	margin-bottom:10px;
+	font-weight: 500;
+	font-size:1.1em;
+}
+
+.gallery-info > p{
+	font-size:1.25em;
+	margin-top:1em;
+}
+
+.gallery-info > a > i{
+    font-size: 2em;
+    margin-top: 0.95em;
+    color: #0077B5;
+}
+.thumbnails{
+	margin-top:3em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	margin-left:0 !important;
+}
+
+.low-opacity{
+	opacity: 0.6;
+}
+.thumb-active{
+	box-shadow: 3px 7px 10px #888888;
+	opacity: 1;
+}
+
+.thumbnail{
+	padding:0px !important;
+	height: 100px;
+	border:1px solid white;
+}
+
+
+.more-page-links{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.more-page-links > a{
+	padding: 1em;
+    text-transform: uppercase;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #A3ACFF;
+    /*text-decoration: underline;*/
+}
+
+.more-page-links > a:hover{
+	color: white;
+	background-color: #434da0;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+}
+
+/*footer*/
+
+.aboutUs.zuc-footer-wrapper{
+	margin-top:0;
+}
+
+/*Culture page styling*/
+
+.culture-hero{
+	background: url('../../../Images/Zuc/images/culture/zucorians-culture-1.jpg')top center no-repeat;
+	background-size: contain;
+	width:100%;
+	max-width: 100%;
+	/*height:1100px;*/
+	position: relative;
+}
+
+.culture-text{
+	width:70%;
+	position: relative;
+	bottom:15em;
+}
+.culture-text h1{
+	color: #434da0;
+    font-family: PublicoHeadline,aktiv-grotesk,Helvetica,sans-serif;
+    font-size:4em;
+    text-align: center;
+
+}
+
+.culture-text p{
+	text-align: center;
+	font-size: 21px;
+ 	font-family: aktiv-grotesk,Helvetica,sans-serif;
+ 	padding:1em;
+ 	color: #36384B;
+ 	line-height: 30px;
+
+}
+
+.two-columns{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.column-one{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.culture-boxShadow{
+	box-shadow: 1px 5px 12px #888888;
+	/*box-shadow: 0 4px 9px 25px rgba(0,0,0,0.21);*/
+}
+
+
+@media only screen and (min-width:641px) and (max-width:1024px) {
+    .our-values .zuc-sixgrid-item img {
+        width: 60%;
+    }
+    .culture-hero{
+		height:600px;
+	}
+}
+
+@media only screen and (min-width:641px) and (max-width:1024px) and (orientation:portrait) {
+    .our-values .zuc-sixgrid-item img {
+        width: 60%;
+    }
+    .values-container{
+		margin-top:17vw;
+	}
+	.culture-hero{
+		height:600px;
+	}
+}
+
+@media only screen and (min-width:1024px){
+	.imageGallery-display{
+		display: grid;
+		width:60%;
+		grid-template-columns: 40% 50%;
+		justify-content: center;
+		align-items: center;
+	}	
+}
+
+@media only screen and (min-width:1025px) and (max-width:1440px) {
+    .our-values .zuc-sixgrid-item img {
+        width: 70%;
+    }
+   section.zuc-sixgrid-container{
+		padding:0 16vw;
+	}
+	.values-container{
+		margin-top:13vw;
+	}
+	.culture-hero{
+		height: 800px;
+	}
+}
+
+
+@media only screen and (min-width:1441px) {
+    .our-values .zuc-sixgrid-item img {
+        width: 70%;
+    }
+    .values-container{
+    	margin-top: 10vw;
+    }
+    .culture-hero{
+    	height: 900px;
+    }
+}
+
+@media screen and (min-width: 1980px) and (max-width:2399px){
+	.culture-hero{
+		background-size: cover;	
+		height:1100px;
+	}
+}
+@media screen and (min-width:2400px){
+	.culture-hero{
+		height:1500px;
+	}
+	.culture-text{
+		bottom:5em;
+	}
+}
+@media only screen and (max-width:767px){
+
+	.zuc-modal-logo{
+		width:80%;
+	}
+	.member-login > .form-buttons{
+		flex-direction: column;
+	}
+
+	.thumbnails{
+		display: none;
+	}
+	.more-page-links{
+		/*flex-direction: column;*/
+	}
+	.gallery-text{
+		padding:0 2em;
+	}
+	.left-side-image{
+		flex-flow: column nowrap;
+	}
+
+	.right-side-image{
+		flex-flow: column-reverse nowrap;
+	}
+
+	.commitment-featured-image, .commitment-featured-content{
+		width: 100%;
+		padding:0;
+	}
+
+	.commitment-featured-image > img{
+		max-width: 100%;
+	}
+
+	.commitment-featured-content{
+		padding:0 1em;
+		margin-top:1em;
+	}
+	.show-for-mobile-only{
+		display: block;
+	}
+
+	.tip{
+		display: none;
+	}
+
+	#value-text{
+		display: none;
+		opacity: 0;
+		}
+	.gallery-arrow > a >i{
+		font-size: 3em;
+	}
+	.imageGallery-display{
+		display: grid;
+		width:60%;
+		/*grid-template-columns: auto auto;*/
+		justify-content: center;
+		align-items: center;
+	}
+	.our-values .zuc-sixgrid-item{
+		width:35%;
+	}
+	.values-container > h2{
+		margin-top:1em;
+	}
+	/*culture page styling*/
+	.culture-hero{
+		height: 380px;
+	}
+	.culture-text{
+		bottom:8em;
+		width:100%;
+	}
+
+	.width-80{
+		width:90%;
+	}
+
+	.two-columns{
+		display: flex;
+		flex-direction: column;
+
+	}
+	.column-one{
+
+	}
+}
+
+
+@media only screen and (min-width:768px){
+	.show-for-mobile-only{
+		display: none;
+	}
+
+	.left-side-image, .right-side-image{
+		flex-flow: row wrap;
+	}
+
+	
+	.commitment-featured-image{
+		width:50%;
+	}
+
+	.commitment-featured-image > img{
+		width:100%;
+		max-width:100%;
+		/*padding:1em;*/
+	}
+
+	.commitment-featured-content{
+		width:50%;
+		padding:0 2em;
+	}
+	.tip-1{
+		top:-40%;
+		left:9%;
+	}
+		.gallery-image{
+		/*width:25%;*/
+		padding:1em;
+	}
+
+	.gallery-info{
+		display: block;
+		/*width:30%;*/
+		padding:1em;
+	}
+
+	.team-gallery > .gallery-text{
+		width:65%;
+		/*margin-left:18vw;*/
+		margin:0 auto;
+	}
+
+	.thumbnail:hover{
+		cursor: pointer;
+		opacity: 1;
+		transition: opacity 0.2s ease-in;
+	}
+	.thumbnail > img{
+		width:100px;
+	}
+	.more-page-links{
+		flex-direction: row;
+	}
+
+	.gallery-arrow > a >i {
+		font-size:6em;
+	}
+
+	.imageGallery-display{
+		display: grid;
+		width:70%;
+		grid-template-columns: auto auto;
+		justify-content: center;
+		align-items: center;
+	}
+
+}
+
