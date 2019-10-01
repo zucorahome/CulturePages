@@ -485,9 +485,63 @@
 	background-size: contain;
 }
 
-.bottom-3{
+.bottom-5{
 	position: relative;
 	bottom: 5em;
+}
+
+.join-box{
+	width:50%;
+	/*box-shadow: 0 2px 68px 0 hsla(0,0%,5%,.2);*/
+	position: relative;
+	/*bottom: 30em;*/
+	/*background-color: white;*/
+	z-index: 100;
+	padding:5em;
+}
+
+.join-box > div{
+	text-align: center;
+}
+.zucora-website{
+	color: #434da0;
+    font-family: 'PublicoHeadline',aktiv-grotesk,Helvetica,sans-serif;
+    font-size:4em;
+    text-align: center;
+}
+
+.perks-container{
+	bottom:20em;
+}
+.perks-boxes{
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-gap: 1em 1em;
+	justify-content: center;
+	margin-top:3em;
+}
+
+.box-item{
+	width:80%;
+	height: auto;
+	box-shadow: 0 0 80px rgba(0,0,0,.3);
+}
+
+.box-item img{
+	/*width:50%;*/
+	display: block;
+	margin:0 auto;
+	padding:2em;
+	height:300px;
+}
+.box-item h3{
+	background-color: #434DA0;
+	color: white;
+	 font-family: 'PublicoHeadline',aktiv-grotesk,Helvetica,sans-serif;
+	 margin-bottom: 0px;
+	 text-align: center;
+	 font-size: 24px;
+	 padding: 13px;
 }
 
 @media only screen and (min-width:641px) and (max-width:1024px) {
@@ -511,58 +565,7 @@
 	}
 }
 
-@media only screen and (min-width:1024px){
-	.imageGallery-display{
-		display: grid;
-		width:60%;
-		grid-template-columns: 40% 50%;
-		justify-content: center;
-		align-items: center;
-	}	
-}
 
-@media only screen and (min-width:1025px) and (max-width:1440px) {
-    .our-values .zuc-sixgrid-item img {
-        width: 70%;
-    }
-   section.zuc-sixgrid-container{
-		padding:0 16vw;
-	}
-	.values-container{
-		margin-top:13vw;
-	}
-	.background-image{
-		height: 800px;
-	}
-}
-
-
-@media only screen and (min-width:1441px) {
-    .our-values .zuc-sixgrid-item img {
-        width: 70%;
-    }
-    .values-container{
-    	margin-top: 10vw;
-    }
-    .background-image{
-    	height: 900px;
-    }
-}
-
-@media screen and (min-width: 1980px) and (max-width:2399px){
-	.background-image{
-		background-size: cover;	
-		height:1100px;
-	}
-}
-@media screen and (min-width:2400px){
-	.background-image{
-		height:1500px;
-	}
-	.culture-text{
-		bottom:5em;
-	}
-}
 @media only screen and (max-width:767px){
 
 	.zuc-modal-logo{
@@ -653,6 +656,20 @@
 		position: relative;
 		bottom: 2em;
 	}
+	.join-box{
+		width:100%;
+		position: relative;
+		bottom: 10em;
+		z-index: 100;
+		padding:3em;
+	}
+
+	.perks-container{
+		bottom: 0;
+	}
+	.perks-boxes{
+		grid-template-columns: 50% 50%;
+	}
 }
 
 
@@ -727,6 +744,71 @@
 	.scroll-gallery-container{
 		margin-top:3em;
 	}
+	.join-box{
+		width:50%;
+		box-shadow: 0 2px 68px 0 hsla(0,0%,5%,.2);
+		position: relative;
+		bottom: 30em;
+		background-color: white;
+		z-index: 100;
+		padding:5em;
+	}
 
+	.becomeZucorian-container > .culture-text{
+		bottom:25em;
+	}
 }
 
+@media only screen and (min-width:1024px){
+	.imageGallery-display{
+		display: grid;
+		width:60%;
+		grid-template-columns: 40% 50%;
+		justify-content: center;
+		align-items: center;
+	}	
+}
+
+@media only screen and (min-width:1025px) and (max-width:1440px) {
+    .our-values .zuc-sixgrid-item img {
+        width: 70%;
+    }
+   section.zuc-sixgrid-container{
+		padding:0 16vw;
+	}
+	.values-container{
+		margin-top:13vw;
+	}
+	.background-image{
+		height: 800px;
+	}
+}
+
+
+@media only screen and (min-width:1441px) {
+    .our-values .zuc-sixgrid-item img {
+        width: 70%;
+    }
+    .values-container{
+    	margin-top: 10vw;
+    }
+    .background-image{
+    	height: 900px;
+    }
+}
+
+@media screen and (min-width: 1980px) and (max-width:2399px){
+	.background-image{
+		background-size: cover;	
+		height:1100px;
+	}
+}
+@media screen and (min-width:2400px){
+	.background-image{
+		height:1500px;
+		background-size: cover;	
+	}
+	.culture-text{
+		bottom:5em;
+	}
+}
