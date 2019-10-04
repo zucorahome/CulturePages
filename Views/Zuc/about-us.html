@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zucora Home: Event page</title>
+  <meta content="" name="description">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="../../Content/Zuc/styles/bootstrap.min.css" rel="stylesheet">
+  <link href="../../Content/Zuc/styles/bootstrap-responsive.min.css" rel="stylesheet">
+  <link href="../../Content/Zuc/styles/styles9d66868d59cc90dfcd5c.css" rel="stylesheet">
+  <link href="../../Content/Zuc/styles/new_styles.css" rel="stylesheet">
+  <!-- <link href="../../Content/Zuc/styles/member-center_style.css" rel="stylesheet">-->
+    <!--[if lt IE 9]> -->
+    <!-- <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> -->
+    <!--[endif]-->
+  <!-- [ FONTS ]-->
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+  <link href="https://use.typekit.net/ovc0ozw.css" rel="stylesheet"><!-- [ JQUERY ]-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="../../Scripts/Zuc/js/navigation.js">
+  </script>
+  <script src="../../Scripts/Zuc/js/modals.js">
+  </script>
+  <script src="../../Scripts/Zuc/js/about-us.js">
+  </script>
+  <script src="../../Scripts/Zuc/js/Controllers/Utils.js">
+  </script>
+  <!-- [ Alerts ]-->
+
+  <script src="https://cdn.jsdelivr.net/alertifyjs/1.9.0/alertify.min.js">
+  </script>
+  <link href="https://cdn.jsdelivr.net/alertifyjs/1.9.0/css/alertify.min.css" rel="stylesheet"><!-- [ RESPONSIVE VIEWPORT ]-->
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+  <!-- Site Navigation-->
+  <div class="zuc-nav-wrapper" data-nav-height="">
+    <!-- Mobile Navigation-->
+    <!-- User Navigation-->
+    <div class="zuc-nav-user flex flex-hor-between flex-vert-center u-uppercase">
+      <!-- Slogan-->
+      <div class="zuc-nav-slogan u-normal">
+        CANADA-WIDE SHIPPING AVAILABLE. FREE ON ORDERS OVER<span class="u-zuc-mint">$39*</span>
+      </div><!--Nav Links-->
+      <div class="zuc-user-links flex flex-hor-start flex-hor-between flex-vert-center">
+        <a href="/Zuc/ourstory" style="text-transform: uppercase;color:white;">About us</a> <a href="#/" style="text-transform: uppercase;color:white;">Blog</a> <!-- Login - Logged Out State--> <a class="zuc-user-login flex flex-vert-center u-bold u-auth-hide" href="javascript:void(0)" onclick="toggleModal('[data-modal-login]')" title="Member Login"><!-- Logged Out State--><!-- <i class="fas fa-lock u-auth-hide"></i> --><span class="u-auth-hide">Member Centre</span></a> <!-- Account - Logged In State--> <a class="zuc-user-login flex flex-vert-center u-bold u-auth-show" href="#" title="My Account"><!-- Logged In state--><i class="fas fa-user u-auth-show"></i><span class="u-auth-show">Account</span></a>
+      </div>
+    </div><!-- Main Navigation-->
+    <nav class="zuc-main-nav flex flex-hor-start flex-hor-between flex-vert-center u-uppercase" data-main-navigation="">
+      <!-- Nav Branding--><a class="zuc-nav-brand" href="/Zuc/index"><img src="../../Images/Zuc/images/ZucoraHome-brand-white.svg"></a> <!-- Nav Links-->
+      <div class="zuc-nav-links flex flex-hor-end flex-hor-between flex-no-wrap flex-vert-center">
+        <!-- Nav Dropdown--><a class="zuc-btn zuc-btn-primary" href="/Zuc/formservicerequest" title="Service Request">Service Request</a> <!-- Smarter Living Link ==============================-->
+        <div class="zuc-nav-dropdown">
+          <span class="u-uppercase">What Is Smarter Living?</span> <!-- Drop Down-->
+          <div aria-hidden="true" class="zuc-hidden-menu" data-hidden-menu="">
+            <div class="zuc-dropdown-content flex flex-hor-between flex-vert-stretch">
+              <!-- Dropdown Links-->
+              <div class="zuc-dropdown-column">
+                <a href="/Zuc/smarterliving" title="Learn more about smarter living.">Smarter Living Plans</a><a href="/Zuc/smarterlivingmembershipbenefits" title="What is Smarter living.">Smarter Living Benefits</a><!--<a href="/Zuc/smarterhomecontrol" title="Smart Home Products" aria-role="menuitem">Smarter Home Control</a>-->
+              </div><!-- Dropdown Images-->
+              <div class="zuc-dropdown-column zuc-dropdown-images"><!-- Column Content-->
+              <p>Smarter Living is about making choices that make life more comfortable and convenient.</p><img alt="A smiling couple" src="../../Images/Zuc/images/nav/smarter-living.png"></div>
+            </div>
+          </div>
+        </div><!-- Service Plans =====================================-->
+        <div class="zuc-nav-dropdown">
+          <span class="u-uppercase">Service Plans</span> <!-- Drop Down-->
+          <div aria-hidden="true" class="zuc-hidden-menu" data-hidden-menu="">
+            <div class="zuc-dropdown-content flex flex-hor-between flex-vert-stretch">
+              <!-- Dropdown Links-->
+              <div class="zuc-dropdown-column">
+                <a href="/Zuc/serviceplansfurniture" title="Learn more about furniture coverage">Furniture plan</a><a href="/Zuc/serviceplansappliance" title="Learn more about appliance coverage">Appliances Plan</a><a href="/Zuc/serviceplanshomesystems" title="Learn more about home systems coverage">Home Systems Plan</a><a href="/Zuc/serviceplans" title="View our bundles &amp; combos">See all Bundles &amp; Combos</a>
+              </div><!-- Dropdown Images-->
+              <div class="zuc-dropdown-column zuc-dropdown-images"><!-- Column Content-->
+              <p>The Smarter Living Plan offers you comprehensive, budget friendly service coverage for your furniture, major appliances, and home-comfort systems.</p><img alt="A service person with toolbag" src="../../Images/Zuc/images/nav/service-plans.png"></div>
+            </div>
+          </div>
+        </div><!-- Smarter Home Products ===============================-->
+        <div class="zuc-nav-dropdown">
+          <span class="u-uppercase">SMARTER HOME PRODUCTS</span> <!-- Drop Down-->
+          <div aria-hidden="true" class="zuc-hidden-menu" data-hidden-menu="">
+            <div class="zuc-dropdown-content flex flex-hor-between flex-vert-stretch">
+              <!-- Dropdown Links-->
+              <div class="zuc-dropdown-column">
+                <a href="/Zuc/smarterhomeproducts" title="Learn about our approach to home wellness">Smarter Living Solutions</a><a href="/Zuc/zucollection" title="View our line of home care products">ZU Collection</a><a href="/Zuc/purecare" title="View our line of sleep wellness products">PureCare</a><a href="/Zuc/furniturecare" title="Learn more about our home wellness care kits">Furniture Care</a><a href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="Shop All Products">Shop all products</a>
+              </div><!-- Dropdown Images-->
+              <div class="zuc-dropdown-column zuc-dropdown-images"><!-- Column Content-->
+              <p>Empower your quest for a clean home and healthy family with Zucora Home's environmentally-responsible products.</p><img alt="A furnished living room" src="../../Images/Zuc/images/nav/smarter-home-products.png"></div>
+            </div>
+          </div>
+        </div><!-- Shop Now ===============================-->
+        <div class="zuc-nav-dropdown --clickme">
+          <a class=" u-uppercase" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="Shop Zucora Home Products">Shop Now</a>
+        </div>
+      </div><!-- Mobile Nav Button-->
+      <div class="zuc-menu">
+        <div aria-label="Mobile Navigation" class="zuc-menu-open" data-open-menu="" role="button">
+          <span aria-hidden="true" aria-label="Open mobile menu" class="hidden">Mobile Menu</span>
+        </div>
+      </div>
+    </nav><!-- Mobile Navigation-->
+    <!-- Mobile Only Nav ======================-->
+    <div class="zuc-mobile-nav" data-mobile-menu="">
+      <!-- Top Branding CTA-->
+      <div class="zuc-mobile-nav-content">
+        <a href="/Zuc/index" title="Zucora Home"><img alt="Zucora Home" src="../../Images/Zuc/images/ZucoraHome-brand-white.svg"></a> <!-- Primary CTA Button--><a class="zuc-btn zuc-btn-primary" href="/Zuc/formservicerequest" title="Service Request">Service Request</a>
+      </div><!-- Accordion Nav ========================================-->
+      <div class="zuc-accordion-nav" role="menu">
+        <!--About Links ================================-->
+        <div class="zuc-accordion-item" data-accordion-item="">
+          <div class="zuc-accordion-title">
+            About Us<i class="zuc-accordion-arrow fas fa-angle-right"></i>
+          </div><!-- Hidden Content-->
+          <div aria-hidden="true" class="zuc-accordion-hidden">
+            <a class="zuc-accordion-link" href="/Zuc/ourstory" title="About Zucora Home">Our Story</a><a class="zuc-accordion-link" href="/Zuc/formcontactus" title="Contact us">Contact Us</a><a class="zuc-accordion-link" href="/Zuc/ourstory" title="Our team">Our Team</a>
+          </div>
+        </div><!-- Smarter Living Links ================================-->
+        <div class="zuc-accordion-item" data-accordion-item="">
+          <div class="zuc-accordion-title">
+            What Is Smarter Living?<i class="zuc-accordion-arrow fas fa-angle-right"></i>
+          </div><!-- Hidden Content-->
+          <div aria-hidden="true" class="zuc-accordion-hidden">
+            <a href="/Zuc/smarterliving" title="Learn more about smarter living.">Smarter Living Plans</a><a href="/Zuc/smarterlivingmembershipbenefits" title="What is Smarter living.">Smarter Living Benefits</a><!--<a href="/Zuc/smarterhomecontrol" title="Smart Home Products" aria-role="menuitem">Smarter Home Control</a>-->
+          </div>
+        </div><!-- Service Plans Links ================================-->
+        <div class="zuc-accordion-item" data-accordion-item="">
+          <div class="zuc-accordion-title">
+            Service Plans<i class="zuc-accordion-arrow fas fa-angle-right"></i>
+          </div><!-- Hidden Content-->
+          <div aria-hidden="true" class="zuc-accordion-hidden">
+            <a href="/Zuc/serviceplansfurniture" title="Learn more about furniture coverage">Furniture plan</a><a href="/Zuc/serviceplansappliance" title="Learn more about appliance coverage">Appliances Plan</a><a href="/Zuc/serviceplanshomesystems" title="Learn more about home systems coverage">Home Systems Plan</a><a href="/Zuc/serviceplans" title="View our bundles &amp; combos">See all Bundles &amp; Combos</a>
+          </div>
+        </div><!-- Home Care Links ================================-->
+        <div class="zuc-accordion-item" data-accordion-item="">
+          <div class="zuc-accordion-title">
+            Smarter Home Products<i class="zuc-accordion-arrow fas fa-angle-right"></i>
+          </div><!-- Hidden Content-->
+          <div aria-hidden="true" class="zuc-accordion-hidden">
+            <a class="zuc-accordion-link" href="/Zuc/smarterhomeproducts" title="Learn about our approach to home wellness">Smarter Living Solutions</a><a class="zuc-accordion-link" href="/Zuc/zucollection" title="View our line of home care products">ZU Collection</a><a class="zuc-accordion-link" href="/Zuc/purecare" title="View our line of sleep wellness products">PureCare</a><a class="zuc-accordion-link" href="/Zuc/furniturecare" title="Learn more about our home wellness care kits">Furniture Care</a><a class="zuc-accordion-link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="View our whole line of offerings">Shop all products</a>
+          </div>
+        </div><!-- Member Centre Links ================================-->
+        <div class="zuc-accordion-item" data-accordion-item="">
+          <div class="zuc-accordion-title">
+            Member Centre<i class="zuc-accordion-arrow fas fa-angle-right"></i>
+          </div><!-- Hidden Content-->
+          <div aria-hidden="true" class="zuc-accordion-hidden">
+            <a class="zuc-accordion-link" href="#" title="Learn more about smarter living.">Member Login</a> <!--a(class="zuc-accordion-link" href='#' title='Learn about the benefits of Smarter Living' aria-role='menuitem')|Redeem Rewards
+              -->
+             <!--a(class="zuc-accordion-link" href='#' title='TODO' aria-role='menuitem')|Blog
+              --><a class="zuc-accordion-link" href="/Zuc/faq" title="Frequently Asked Questions">FAQ</a>
+          </div>
+        </div><!-- Shop Now ================================-->
+        <!-- <div class="zuc-accordion-item" data-accordion-item> Removing this div to make it click on mobile.-->
+        <a class="zuc-accordion-link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" style="display: block;font-size: 5vw;text-transform: uppercase;font-weight: 500;padding: 2vh 7vw;color: #f7f7f7;" title="Shop Now">Shop Now <!-- <i class="zuc-accordion-arrow fas fa-angle-right"></i> --></a> <!-- </div> -->
+      </div>
+      <div class="zuc-menu" data-open-menu="">
+        <div aria-label="Mobile Navigation Toggle" class="zuc-menu-open close" role="button">
+          <span aria-hidden="true" aria-label="Click to toggle mobile menu" class="hidden">Mobile Menu</span>
+        </div>
+      </div><!-- Social Icons-->
+      <div class="zuc-mobile-social flex flex-row flex-hor-center flex-vert-center">
+        <!-- Facebook--><a class="zuc-social-link" href="https://www.facebook.com/zucorahomesmarterliving/" target="_blank" title="Like us on Facebook"><i class="fab fa-facebook-f"></i></a> <!-- Instagram--><a class="zuc-social-link" href="https://www.instagram.com/zucorahome/" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a> <!-- LinkedIn--><a class="zuc-social-link" href="https://www.linkedin.com/company/zucora-inc-/" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div><!-- Broadcast Banner-->
+    <div class="zuc-nav-broadcast flex flex-hor-between flex-vert-center" data-broadcast-banner="">
+      <div class="zuc-broadcast-text u-truncate u-bold">
+        Suggested editable broadcast banner that you can turn on/off for promos &amp; customer care outages.
+      </div>
+      <div class="zuc-broadcast-close" onclick="closeBroadcast()">
+        <i class="fas fa-times"></i>
+      </div>
+    </div>
+  </div><!-- Login Modal-->
+  <!-- Modal Container-->
+  <div class="zuc-modal" data-modal-login="" onclick="toggleModal('[data-modal-login]')">
+    <!-- Modal Content-->
+    <div class="zuc-modal-content member-login" onclick="event.stopPropagation()">
+      <!-- Place Modal Content Here-->
+      <div><img alt="Smarter Living logo with house icon on the left." class="smarterLiving-logo center" src="../../Images/Zuc/images/homepage/SmarterLivingLogo_small.png"></div>
+      <div class="zuc-modal-subtitle u-text-center">
+        Member login
+      </div><!-- User Email-->
+      <div class="zuc-input-group center">
+        <div class="zuc-input-name">
+          Email address
+        </div><label class="u-screenreader" for="field-email">Email address</label> <input data-required="" id="field-email" name="email" placeholder="Email address" required="" type="text">
+      </div><!-- User Password-->
+      <div class="zuc-input-group center">
+        <div class="zuc-input-name">
+          Password
+        </div><label class="u-screenreader" for="field-password">User Password</label> <input data-required="" name="password" placeholder="Password" required="" type="password"><a class="zuc-input-link" href="/Zuc/formforgotpassword" style="font-size:0.85em;" title="Password Reset">I need help with my&nbsp;<span class="u-highlight">password</span></a>
+      </div><!-- Remember me radio button -->
+      <div class="remember-me">
+        <input name="remember-me" type="checkbox" value="remember-me-checked"> Remember me
+      </div><!-- Submit Button-->
+      <div class="form-buttons">
+        <button class="zuc-btn zuc-btn-secondary --full-width"><a href="./welcome_screen.html">Login</a></button> <button class="zuc-btn zuc-btn-secondary --full-width"><a href="./account-setup.html">Become a Member</a></button> <!-- <a class="zuc-register zuc-input-link u-text-center" href="#" title="Become a Member" style="display:block">I want to become a<span class="u-highlight">&nbsp;Smarter Living Member</span></a> -->
+      </div><!-- Button div ends-->
+    </div>
+  </div><!-- Main page content-->
+  <section class="zuc-about-hero" style="background-image: url('../../Images/Zuc/images/about/zucorahome-team-min.jpg');">
+    <div class="d-bkg-wave --bottom --transparent-bkg">
+      <div class="zuc-about-hero-textbox">
+        <h1>About Us <img alt="Purple coloured arrows pointing left side." class="purple-arrows" src="../../Images/Zuc/images/products-services-availability-modal/ZH_Element_Chevron.svg"></h1>
+        <p>We are Canada's Smarter Living Company. Our innovative repair and replacement programs for furniture, appliances, and home systems protect your budget from the unexpected, and our Smarter Home Products give you confidence that you're positively impacting your family's well-being and your environment.</p><br>
+        <p>Helping create a world of clean homes, healthy families, and intelligent lifestyles is rooted in our corporate operating standards. This extends to how we source our products, our corporate culture, and our dedication to our Members, plan holders, and industry partners.</p><br>
+        <p>Located in London, Ontario, we're proud to be recognized as one of the best places to work, and we're passionate about delivering on our values and commitments.</p><!-- <img class="zuc-about-hero-graphic" src="/Images/Zuc/images/products-services-availability-modal/ZH_Element_Chevron.svg" alt="Purple coloured arrows pointing left side."> -->
+      </div>
+    </div>
+  </section>
+  <section class="zuc-sixgrid-container values-container">
+    <h2 class="u-font-serif u-zuc-indigo margin-bottom-1">Our Values</h2>
+    <div class="zuc-sixgrid-items flex-hor-between our-values">
+      <div class="zuc-sixgrid-item">
+        <div class="zuc-sixgrid-img-container">
+          <img alt="Icon of People with forming circle." src="../../Images/Zuc/images/about/people-icon.png">
+        </div>
+        <h6>People</h6>
+        <p class="show-for-mobile-only">We build leaders of teams and teams of leaders.</p>
+      </div>
+      <div class="zuc-sixgrid-item">
+        <div class="zuc-sixgrid-img-container"><img alt="Icon of a dialog box with firve stars inside." src="../../Images/Zuc/images/about/service-icon-01.png"></div>
+        <h6>Service</h6>
+        <p class="show-for-mobile-only">Looking after our customers is the most important thing we do.</p>
+      </div>
+      <div class="zuc-sixgrid-item">
+        <div class="zuc-sixgrid-img-container"><img alt="Icon of a key to show case possibilities." src="../../Images/Zuc/images/about/possibility-icon-01-150.png"></div>
+        <h6>Possibility</h6>
+        <p class="show-for-mobile-only">We don’t believe in giving up.</p>
+      </div>
+      <div class="zuc-sixgrid-item">
+        <div class="zuc-sixgrid-img-container"><img alt="Icon of a family." src="../../Images/Zuc/images/about/family-icon-01.png"></div>
+        <h6>Family</h6>
+        <p class="show-for-mobile-only">Business isn’t just about numbers&mdash;it’s really about people.</p>
+      </div>
+      <div class="zuc-sixgrid-item">
+        <div class="zuc-sixgrid-img-container"><img alt="Icon of tw handes holding a bulb in the middle." src="../../Images/Zuc/images/about/legacy-icon-01.png"></div>
+        <h6>Legacy</h6>
+        <p class="show-for-mobile-only">We are building a better tomorrow.</p>
+      </div><!-- text box -->
+      <div class="value-text-shadow">
+        <div><span class="tip tip-1"></span></div>
+        <p id="value-text">We build leaders of teams and teams of leaders.</p>
+      </div>
+
+    </div>
+  </section><!-- Commitment -->
+  <section class="commitments zuc-sixgrid-container">
+    <h3 class="sr-only">Our commitments section with pictures and information.</h3>
+    <h2 class="u-font-serif u-zuc-indigo">Our Commitments</h2><!-- First section -->
+    <div class="left-side-image flex flex-vert-start ">
+      <div class="commitment-featured-image"><img alt="Environmental committee members wearing green coloured tshirts and smiling." class="" src="../../Images/Zuc/images/about/environmental-committee.jpg"></div>
+      <div class="commitment-featured-content">
+        <!-- Title -->
+        <div class="zuc-title-container flex">
+          <h4>Sustainability</h4>
+          <div class="zuc-title-flag">
+            <div class="--green"></div>
+          </div>
+        </div><!-- Paragraph with icon -->
+        <p>Our corporate social responsibility is deeply rooted in our mission to provide products, services, and operating standards that incorporate recycled materials and sustainable processes. Our ZU Collection products are eco-friendly, non-toxic, cruelty free, and made in Canada.</p>
+        <p>Because we believe in building a better tomorrow, our Environmental Committee actively implements greener procedures, and inspires all Zucorians to look for ways to reduce our carbon footprint. Some of our initiatives include reducing waste and energy consumption, improved recycling programs, and using plants to naturally improve air quality. </p>
+        <p>As part of our commitment to sustainable and ethical business practices, we’re initiating a procurement policy that defines how we do business. This includes responsible acquisition of goods and services, transparent processes and procedures, and aligning ourselves with like-minded vendors.</p>
+        <!-- icon -->
+        <!-- <div class="circle plus-sign center">
+          &#43;
+        </div> -->
+      </div>
+    </div><!-- 2nd section -->
+    <div class="right-side-image flex margin-top-5 flex-vert-start ">
+      <div class="commitment-featured-content">
+        <!-- Title -->
+        <div class="zuc-title-container flex">
+          <h4>Community</h4>
+          <div class="zuc-title-flag">
+            <div class="--green"></div>
+          </div>
+        </div><!-- Paragraph with icon -->
+        <p>Investing in our community is an integral part of our commitment to support the communities where we live, work and play.</p>
+        <p>Because we believe that business isn't just about numbers&mdash;it’s really about people, our Culture and Community Committee actively seeks ways to make a positive impact in our communities. We invest our time and resources by partnering with local and national organizations that support youth education, health and well&mdash;being, and the environment.</p>
+        <p>At our home base, community is at the heart of our corporate culture, and collaboration is in our DNA. The ZucoraHome family extends far beyond our team to include our customers and our service and retail partners. We believe in building relationships, and we’re in it for the long haul, together.</p><!-- icon -->
+        <!-- <div class="circle plus-sign center">&#43;</div> -->
+        <!-- <div class="circle minus-sign center">
+          &#8211;
+        </div> -->
+      </div><!--featured content ends -->
+      <div class="commitment-featured-image"><img alt="Social committee members in Zucora blue t-shirt smiling and happy." src="../../Images/Zuc/images/about/culture-committee.jpg"></div>
+    </div><!-- 3rd Section -->
+    <div class="left-side-image flex margin-top-5 flex-vert-start">
+      <div class="commitment-featured-image"><img alt="Product committee members showing products and smiling." class="" src="../../Images/Zuc/images/about/product-committee.jpg"></div>
+      <div class="commitment-featured-content">
+        <!-- Title -->
+        <div class="zuc-title-container flex">
+          <h4>Innovation</h4>
+          <div class="zuc-title-flag">
+            <div class="--green"></div>
+          </div>
+        </div><!-- Paragraph with icon -->
+        <p>Our successful track record of delivering service, repair, and replacement programs is marked by a 40-year history of understanding the needs of our customers, anticipating change, and transforming home management with modern solutions. By combining our people, professional services and technology, we deliver smarter living solutions designed for Canadians who are seeking a convenient and eco-friendly lifestyle.</p>
+        <p>Because we believe in building leaders of teams, and teams of leaders, we foster a culture of creativity, trust, and participation. Through our Product Advisory Committee, Zucorians ensure that we’re meeting and anticipating the needs of our customers by testing our products and reviewing market trends. This approach empowers our teams and drives our forward thinking processes and procedures.</p>
+        <p></p>
+        <!-- icon -->
+        <!-- <div class="circle plus-sign center">
+          &#43;
+        </div> -->
+      </div>
+    </div>
+  </section><!-- Leadership team Carousel -->
+  <section class="team-gallery margin-top-5" id="our-team">
+    <h3 class="sr-only">Team members information by clicking next arrows.</h3>
+    <div class="gallery-text">
+      <h2 class="u-font-serif u-zuc-indigo">Meet our Leadership Team</h2>
+      <p class="subtext-team">We are led by an experienced team of professionals who are passionate about delivering exceptional service - while still finding ways to have fun!</p>
+    </div><!-- Image source and info -->
+    <div class="main-info">
+      <div class="gallery-arrow">
+        <a href="JavaScript:void(0);" class="left-arrow" ><i class='fas fa-angle-left'></i></a> 
+        <!-- onclick="arrowClicked('-1')" -->
+      </div>
+      <!-- Data which will change -->
+      <div class="imageGallery-display">
+          <div class="gallery-image">
+            <img alt="Brad Geddes's head shot." src="../../Images/Zuc/images/about/brad-geddes.jpg">
+          </div>
+          <div class="gallery-info">
+            <h3 class="gallery-title">Brad Geddes</h3>
+            <p class="gallery-subtitle">Head Coach, President &amp; CEO</p>
+            <p class="desc">As an accomplished entrepreneur and business leader, Brad and his team are constantly creating opportunities to provide Canadians with smarter living solutions that combine emerging technologies with in-home professional services to help Canadians live more comfortably.</p>
+            <a href="http://ca.linkedin.com/in/bradfordgeddes" target="_blank" class="linkedin-link"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+    
+      <!-- gallery-info ends-->
+      <div class="gallery-arrow">
+         <a href="JavaScript:void(0);" class="right-arrow"><i class="fas fa-angle-right"></i></a>
+         <!-- onclick="arrowClicked('1')" -->
+      </div>
+    </div>
+    <div class="thumbnails">
+      <div class="thumb-active thumbnail" id="0"><img alt="Brad Geddes's head shot." src="../../Images/Zuc/images/about/brad-geddes-small.jpg"></div>
+      <div class="thumbnail low-opacity" id="1"><img alt="Michelle's head shot." src="../../Images/Zuc/images/about/michelle-mahovlich-small.jpg"></div>
+      <div class="thumbnail low-opacity" id="2"><img alt="Mark's head shot." src="../../Images/Zuc/images/about/mark-geddes-small.jpg"></div>
+      <div class="thumbnail low-opacity" id="3"><img alt="Ashleigh's head shot." src="../../Images/Zuc/images/about/ashleigh-geddes-small.jpg"></div>
+      <div class="thumbnail low-opacity" id="4"><img alt="David's head shot." src="../../Images/Zuc/images/about/david-cohn-small.jpg"></div>
+      <div class="thumbnail low-opacity" id="5"><img alt="Magda's head shot." src="../../Images/Zuc/images/about/magda-everett-small.jpg"></div>
+      <div class="thumbnail low-opacity" id="6"><img alt="Trevor's head shot." src="../../Images/Zuc/images/about/trevor-brimson-small.jpg"></div>
+      <div class="thumbnail low-opacity" id="7"><img alt="Jim's head shot." src="../../Images/Zuc/images/about/jim-brower-small.jpg"></div>
+      <div class="thumbnail low-opacity" id="8"><img alt="Rebeca's head shot." src="../../Images/Zuc/images/about/rebeca-lopez-small.jpg"></div>
+      <div class="thumbnail low-opacity" id="9"><img alt="Colleen's head shot." src="../../Images/Zuc/images/about/colleen-babenko-small.jpg"></div>
+      <div class="thumbnail low-opacity" id="10"><img alt="Oksana's head shot." src="../../Images/Zuc/images/about/oksana-tchoutchman-small.jpg"></div>
+    </div>
+  </section>
+  <section class="more-page-links margin-top-1 margin-bottom-1">
+   <!--  <a href="#/">Careers</a> <a href="#/">Culture</a>  --><a href="https://www.zucorahomeblog.com/" target="_blank">News</a>
+  </section><!-- main page content ends -->
+  <!-- Site Footer-->
+  <footer class="zuc-footer-wrapper aboutUs">
+    <!-- - Footer Links-->
+    <footer class="flex flex-hor-center zuc-footer">
+      <div class="zuc-footer--brand-section flex flex-column">
+        <a class="zuc-nav-brand" href="/Zuc/index" title="Home"><img src="../../Images/Zuc/images/ZucoraHome-brand-white.svg"></a>
+        <div class="zuc-footer--social-icons-primary">
+          <div class="zuc-mobile-social flex flex-row flex-hor-center flex-vert-center">
+            <!-- Facebook--><a class="zuc-social-link" href="https://www.facebook.com/zucorahomesmarterliving/" target="_blank" title="Like us on Facebook"><i class="fab fa-facebook-f"></i></a> <!-- Instagram--><a class="zuc-social-link" href="https://www.instagram.com/zucorahome/" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a> <!-- LinkedIn--><a class="zuc-social-link" href="https://www.linkedin.com/company/zucora-inc-/" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="zuc-footer-body flex flex-row">
+        <div class="zuc-footer-row flex">
+          <div class="flex flex-column flex-vert-start zuc-footer--column">
+            <h4 class="zuc-footer--header u-uppercase">About Us</h4><a class="zuc-footer--link" href="/Zuc/formcontactus" title="Contact Us">Contact Us</a><a class="zuc-footer--link" href="/Zuc/ourstory" title="About Us">Our Story</a><a class="zuc-footer--link" href="/Zuc/ourstory#our-team" title="Our Team">Our Team</a><a class="zuc-footer--link" href="/Zuc/ourstory#join-us" title="Join Us">Join Us</a>
+          </div>
+          <div class="flex flex-column flex-vert-start zuc-footer--column">
+            <h4 class="zuc-footer--header u-uppercase">Member Centre</h4><a class="zuc-footer--link" href="/Zuc/smarterliving" title="What is Smarter Living?">What is Smarter Living?</a><a class="zuc-footer--link" href="javascript:void(0)" onclick="toggleModal('[data-modal-login]')" title="Member Login">Member Login</a><a class="zuc-footer--link" href="/Zuc/faq" title="Frequently Asked Questions">FAQ</a>
+          </div>
+        </div>
+        <div class="zuc-footer-row flex">
+          <div class="flex flex-column flex-vert-start zuc-footer--column">
+            <h4 class="zuc-footer--header u-uppercase">Products &amp; Services</h4><a class="zuc-footer--link" href="/Zuc/serviceplans" title="Service Plans Parent">Service Plans</a><!--<a class="zuc-footer==link" href="/Zuc/smarterhomecontrol" title="Smarter Home Control">Smarter Home Control</a>--><a class="zuc-footer--link" href="/Zuc/smarterhomeproducts" title="Smarter Home Products">Smarter Home Products</a><a class="zuc-footer--link" href="/Zuc/formordersshipping" title="Orders and Returns">Orders &amp; Returns</a><a class="zuc-footer--link" href="http://prod-webstore-v00-1032646173.us-east-1.elb.amazonaws.com/all-products" title="Shop Now">Shop Now</a>
+          </div>
+        </div>
+        <div class="zuc-footer--zuc-footer-right zuc-footer--column">
+          <a class="zuc-btn zuc-btn-primary" href="/Zuc/formservicerequest" title="Service Request">Service Request</a>
+          <div class="zuc-footer--social-icons-secondary">
+            <div class="zuc-mobile-social flex flex-row flex-hor-center flex-vert-center">
+              <!-- Facebook--><a class="zuc-social-link" href="https://www.facebook.com/zucorahomesmarterliving/" target="_blank" title="Like us on Facebook"><i class="fab fa-facebook-f"></i></a> <!-- Instagram--><a class="zuc-social-link" href="https://www.instagram.com/zucorahome/" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a> <!-- LinkedIn--><a class="zuc-social-link" href="https://www.linkedin.com/company/zucora-inc-/" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="zuc-shipping-blurb">
+            <span class="u-zuc-platinum">CANADA-WIDE SHIPPING AVAILABLE.<br>
+            FREE ON ORDERS OVER</span><span class="u-zuc-mint">&nbsp; $39*</span>
+          </div>
+        </div>
+      </div>
+    </footer><!-- - Footer SubLinks-->
+    <!-- Footer Sub Links-->
+    <div class="zuc-footer--copyright flex flex-vert-center">
+      <div class="zuc-footer--copyright-title">
+        <span class="zuc-footer--copyright-text">Copyright&nbsp;&copy;&nbsp;</span><a class="zuc-footer--copyright-text" href="/Zuc/index" title="Zucora Home">Zucora Inc.</a><span class="zuc-footer--copyright-text">&nbsp;2018</span>
+      </div>
+      <div class="zuc-footer--copyright-menu flex flex-hor-start">
+        <a class="zuc-footer--copyright-text" href="/Zuc/privacypolicy" title="View our Privacy Policy">Privacy Policy</a><span>&bull;</span><a class="zuc-footer--copyright-text" href="/Zuc/termsservice" title="View our Terms of Service">Terms of Service</a><span>&bull;</span><a class="zuc-footer--copyright-text" href="/Zuc/sitemap" title="View our Sitemap">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+  <div class="zuc-footer--btm-trim"></div><!--  @*@if (LoadModal) { Html.RenderAction("ProductsServicesAvailabilityModal", "Zuc"); }*@ -->
+  <script>
+  new LTPublicUtils().ShowUI();
+  </script> 
+  <script src="../../Content/Zuc/js/build9d66868d59cc90dfcd5c.js" type="text/javascript">
+  </script>
+</body>
+</html>

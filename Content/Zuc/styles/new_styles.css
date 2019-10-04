@@ -473,7 +473,7 @@
 }*/
 
 .three-slider{
-	max-width: 1282px;
+	max-width: 1185px;
     overflow: hidden;
     display: flex;
 }
@@ -481,21 +481,23 @@
 .three-slider > img{
 	/*margin:0 1em;*/
 	position: relative;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
 }
 
-.scroll-gallery >.left-arrow, .scroll-gallery >.right-arrow {
+.scroll-gallery >.left-slide, .scroll-gallery >.right-slide {
 	position: relative;
 	z-index: 100;
 }
 
-.scroll-gallery >.left-arrow{
-	left:2%;
+.scroll-gallery >.left-slide{
+	left:1.5%;
 }
-.scroll-gallery >.right-arrow{
-	right:2%;
+.scroll-gallery >.right-slide{
+	right:1.5%;
 }
 
-.scroll-gallery >.left-arrow >a >img, .scroll-gallery >.right-arrow >a >img{
+.scroll-gallery >.left-slide >a >img, .scroll-gallery >.right-slide >a >img{
 	width:50px;
 }
 
@@ -683,7 +685,8 @@
 	.scroll-gallery{
 		margin-top:2em;
 	}
-	.scroll-gallery >.left-arrow >a >img, .scroll-gallery >.right-arrow >a >img{
+	
+	.scroll-gallery >.left-slide >a >img, .scroll-gallery >.right-slide >a >img{
 		width:100%;
 	}
 	.join-box{
@@ -776,7 +779,7 @@
 		margin-top:3em;
 	}
 	.three-slider > img{
-		margin:0 1em;
+		margin:0 10px;
 	}
 	.culture-gallery-title{
 		padding-left:2em;
