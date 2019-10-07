@@ -7,28 +7,31 @@ console.log("DOM function called");
 // have function which takes the number 1 and increses each time they click.
 //that number * -425px left of each image. 
 let x=0;
-$('.left-slide').hide();
+// $('.left-slide').hide();
+//slide's max width should be changable
+let imageWidth, maxWidth,arrowCount=3;
+
+function getmaxWidth(){
+	imageWidth = parseInt($('.three-slider img').width());
+	maxWidth= imageWidth *arrowCount;
+	$('.three-slider').css("max-width",maxWidth);
+}
+
 function sliderGallery(number){
-	//slide's max width should be changable
-	//moveLeft different as per screen width : mobile, ipad and desktop
-	//for mobile need to go -50. hopefully that works
-	let images = $('.three-slider img'), imageWidth, moveLeft, leftNum,arrowCount=3,marginWidth=20;
-	imageWidth= parseInt($('.three-slider img').width());
-	console.log(imageWidth);
+
+	let images = $('.three-slider img'), moveLeft, leftNum,marginWidth=20;
+	getmaxWidth();
 	x = x + number;
 	x = Math.abs(x);
-	if(x > 0){
-		$('.left-slide').show(500);
-	}else{
-		$('.left-slide').hide();
-	}
+	// if(x > 0){
+	// 	$('.left-slide').show(500);
+	// }else{
+	// 	$('.left-slide').hide();
+	// }
 	marginWidth *= x;
-	console.log(marginWidth);
 	moveLeft = (imageWidth * x) + marginWidth;
-	console.log("move left is "+ moveLeft);
 	imageWidth = "-"+ moveLeft;
 	leftNum = parseInt(imageWidth) + "px";
-	console.log(leftNum);
 	images.css("left",leftNum);
 	images.css("transition","all 0.5s ease-in-out");
 	if(x >= arrowCount){
@@ -43,8 +46,9 @@ $('.right-slide a').click(function(){
 
 	$('.left-slide a').click(function(){
 		sliderGallery(-1);
-
 	});
+
+	getmaxWidth();
 });
 
 

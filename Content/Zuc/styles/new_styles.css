@@ -473,9 +473,10 @@
 }*/
 
 .three-slider{
-	max-width: 1185px;
+	max-width: 1200px;
     overflow: hidden;
     display: flex;
+    -moz-overflow:hidden;
 }
 
 .three-slider > img{
@@ -491,10 +492,10 @@
 }
 
 .scroll-gallery >.left-slide{
-	left:1.5%;
+	left:1.25%;
 }
 .scroll-gallery >.right-slide{
-	right:1.5%;
+	right:1%;
 }
 
 .scroll-gallery >.left-slide >a >img, .scroll-gallery >.right-slide >a >img{
@@ -512,6 +513,30 @@
 	bottom: 5em;
 }
 
+.organization-container{
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	justify-content: center;
+	grid-gap:2em 1em;
+	max-width:100%;
+}
+
+.org-logo{
+	width:70%;
+	/*height:400px;*/
+	display: table-cell;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+.org-logo img{
+	/*width:300px;*/
+	display: table-cell;
+	max-width: 100%;
+	margin:0 auto;
+	padding:1em;
+	vertical-align: middle;
+}
+/*Join Zucora page*/
 .join-box{
 	width:50%;
 	/*box-shadow: 0 2px 68px 0 hsla(0,0%,5%,.2);*/
@@ -689,6 +714,12 @@
 	.scroll-gallery >.left-slide >a >img, .scroll-gallery >.right-slide >a >img{
 		width:100%;
 	}
+	.organization-container{
+		grid-template-columns: auto;
+	}
+	.organization-container > .culture-gallery-title{
+		padding:1em;
+	}
 	.join-box{
 		width:100%;
 		position: relative;
@@ -782,7 +813,10 @@
 		margin:0 10px;
 	}
 	.culture-gallery-title{
-		padding-left:2em;
+		padding-left:1em;
+	}
+	.culture-gallery-title > h2{
+		font-size:42px;
 	}
 	.join-box{
 		width:50%;
@@ -834,6 +868,7 @@
     }
     .background-image{
     	height: 900px;
+    	background-size: cover;
     }
 }
 
