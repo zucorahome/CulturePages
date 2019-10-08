@@ -522,7 +522,7 @@
 }
 
 .org-logo{
-	width: 100%;
+	width: 90%;
     min-height: 350px;
     display: grid;
     justify-content: center;
@@ -567,13 +567,14 @@
 .perks-boxes{
 	display: grid;
 	grid-template-columns: 33% 33% 33%;
-	grid-gap: 1em 1em;
+	grid-gap: 4em 10px;
 	justify-content: center;
 	margin-top:3em;
+	align-items: flex-start;
 }
 
 .box-item{
-	width:90%;
+	width:80%;
 	height: auto;
 	box-shadow: 0 0 80px rgba(0,0,0,.3);
 }
@@ -595,6 +596,39 @@
 	 padding: 13px;
 }
 
+
+
+.jobOpening-box{
+	width:80%;
+	display: block;
+	margin:2em auto;
+	padding:2em;
+}
+
+.jobOpening-box h3{
+	font-size: 48px;
+	/*line-height: 70px;*/
+	color: #434da0;
+	font-family: "Publico Headline", aktiv-grotesk,Helvetica,sans-serif;
+	font-weight: 500;
+	font-size:2.5em;
+	margin-bottom: 0;
+}
+
+.jobOpening-box p{
+	/*line-height: 70px;*/
+	color: #5e5f6e;
+	font-family: "Aktiv Grotesk";
+	font-weight: 500;
+	font-size:1.75em;
+	margin-bottom: 1em;
+}
+.jobOpening-box a{
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-weight: 700;
+	color:#64eeb0;
+}
 @media only screen and (min-width:641px) and (max-width:1024px) {
     .our-values .zuc-sixgrid-item img {
         width: 60%;
@@ -738,9 +772,23 @@
 
 	.perks-container{
 		bottom: 0;
+		text-align: center;
+	}
+
+	.perks-container > .zuc-title-container{
+		justify-content: center;
 	}
 	.perks-boxes{
-		grid-template-columns: 50% 50%;
+		grid-template-columns: auto;
+	}
+
+	.hiring-container{
+		margin-top:2em;
+	}
+
+	.hiring-container > .zucora-website{
+		font-size: 30px;
+		font-weight: 500;
 	}
 }
 
@@ -836,6 +884,9 @@
 	.becomeZucorian-container > .culture-text{
 		bottom:25em;
 	}
+	.hiring-container{
+		bottom:10em;
+	}
 }
 
 @media only screen and (min-width:1024px){
@@ -882,6 +933,13 @@
 		background-size: cover;	
 		height:1100px;
 	}
+
+	.joinZucora-hero.background-image{
+		height:1200px;
+	}
+	.jobOpening-box{
+		width:60%;
+	}
 }
 @media screen and (min-width:2400px){
 	.background-image{
@@ -890,5 +948,8 @@
 	}
 	.culture-text{
 		bottom:5em;
+	}
+	.jobOpening-box{
+		width:50%;
 	}
 }

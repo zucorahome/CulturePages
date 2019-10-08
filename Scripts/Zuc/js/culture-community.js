@@ -49,6 +49,16 @@ $('.right-slide a').click(function(){
 	});
 
 	getmaxWidth();
+
+	$("a[href^='#']").click(function(e) {
+	e.preventDefault();
+	
+	var position = $($(this).attr("href")).offset().top;
+	position -= 200;
+	$("body, html").animate({
+			scrollTop: position
+		},1000 );
+	});
 });
 
 
