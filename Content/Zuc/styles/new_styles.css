@@ -522,14 +522,14 @@
 }
 
 .org-logo{
-	width:70%;
-	/*height:400px;*/
-	display: table-cell;
-	margin: 0 auto;
-	vertical-align: middle;
+	width: 100%;
+    min-height: 350px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 .org-logo img{
-	/*width:300px;*/
+	width:70%;
 	display: table-cell;
 	max-width: 100%;
 	margin:0 auto;
@@ -537,6 +537,10 @@
 	vertical-align: middle;
 }
 /*Join Zucora page*/
+.joinZucora-hero{
+	background: url('../../../Images/Zuc/images/join-zucora/joinbanner.jpg')top center no-repeat;
+	background-size: contain;
+}
 .join-box{
 	width:50%;
 	/*box-shadow: 0 2px 68px 0 hsla(0,0%,5%,.2);*/
@@ -569,7 +573,7 @@
 }
 
 .box-item{
-	width:80%;
+	width:90%;
 	height: auto;
 	box-shadow: 0 0 80px rgba(0,0,0,.3);
 }
@@ -597,6 +601,9 @@
     }
     .background-image{
 		height:600px;
+	}
+	.culture-gallery-title > h2{
+		font-size:2em;
 	}
 }
 
@@ -716,6 +723,7 @@
 	}
 	.organization-container{
 		grid-template-columns: auto;
+		padding:2em;
 	}
 	.organization-container > .culture-gallery-title{
 		padding:1em;
@@ -814,9 +822,6 @@
 	}
 	.culture-gallery-title{
 		padding-left:1em;
-	}
-	.culture-gallery-title > h2{
-		font-size:42px;
 	}
 	.join-box{
 		width:50%;
