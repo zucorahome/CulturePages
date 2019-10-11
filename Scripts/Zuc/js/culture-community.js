@@ -2,53 +2,67 @@ $(document).ready(function(){
 
 // create a function in about us to call tip function on only about us page. and ther are some updates before sending all other page updates. 
 
-console.log("DOM function called");
-
-// have function which takes the number 1 and increses each time they click.
-//that number * -425px left of each image. 
+// console.log("DOM function called");
 let x=0;
-// $('.left-slide').hide();
-//slide's max width should be changable
-let imageWidth, maxWidth,arrowCount=3;
+let imageWidth, maxWidth=1200,arrowCount=3,marginWidth;
 
 function getmaxWidth(){
-	imageWidth = parseInt($('.three-slider img').width());
-	maxWidth= imageWidth *arrowCount;
-	$('.three-slider').css("max-width",maxWidth);
+	let screenSize = $(document).width();
+	if(screenSize <= 767 ){
+		arrowCount = 5;
+		marginWidth = 1;
+
+		
+	}else if(screenSize >=767 && screenSize <= 1025){
+		// console.log("screen size called");
+		arrowCount = 4;
+		$('.three-slider img').css("width","50%");
+		marginWidth = 10;
+	}else{
+		arrowCount = 3;
+		marginWidth = 20;
+		
+	}
+	
+		imageWidth = parseInt($('.three-slider img').width());
+		maxWidth= (imageWidth *arrowCount) + marginWidth;
+		console.log("max width is " + maxWidth , marginWidth);
+		$('.three-slider').css("max-width",maxWidth);
 }
 
 function sliderGallery(number){
 
-	let images = $('.three-slider img'), moveLeft, leftNum,marginWidth=20;
+	let images = $('.three-slider img'), moveLeft, leftNum;
 	getmaxWidth();
 	x = x + number;
 	x = Math.abs(x);
-	// if(x > 0){
-	// 	$('.left-slide').show(500);
-	// }else{
-	// 	$('.left-slide').hide();
-	// }
+	console.log("after math function"+x);
 	marginWidth *= x;
+	// console.log("imageWidth is "+imageWidth * x, "marginWidth is" + marginWidth);
 	moveLeft = (imageWidth * x) + marginWidth;
+	console.log("moveLeft is" +moveLeft);
 	imageWidth = "-"+ moveLeft;
+	// console.log(parseInt(imageWidth));
 	leftNum = parseInt(imageWidth) + "px";
+	console.log(leftNum);
 	images.css("left",leftNum);
 	images.css("transition","all 0.5s ease-in-out");
+	// console.log(arrowCount);
 	if(x >= arrowCount){
+		//if right side button clcicked
 		x=-1;
+		//else if left button clicked then x=5 only
 	}
+	console.log(x);
 }
 
-
-$('.right-slide a').click(function(){
-	sliderGallery(1);
-});
+	$('.right-slide a').click(function(){
+		sliderGallery(1);
+	});
 
 	$('.left-slide a').click(function(){
 		sliderGallery(-1);
-	});
-
-	getmaxWidth();
+	});	
 
 	$("a[href^='#']").click(function(e) {
 	e.preventDefault();
@@ -58,6 +72,13 @@ $('.right-slide a').click(function(){
 	$("body, html").animate({
 			scrollTop: position
 		},1000 );
+	});
+
+	//calling functions
+	getmaxWidth();
+
+	$(window).resize(function(){
+		getmaxWidth();
 	});
 });
 

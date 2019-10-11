@@ -5,10 +5,14 @@ $('.jobPostings').hide();
     $(".jobPostings").show(1000);
   });
 
- //Make the auto rotation of values and on hover display the text
-
-let interval = setInterval(autoRotate, 2500);
 let i=0, left= 9;
+
+//call this function on about-us page only. 
+let currentPath = window.location.pathname;
+
+if(currentPath.indexOf('about') > 0 || currentPath.indexOf('ourstory') > 0){
+	let interval = setInterval(autoRotate, 2500);
+}
 
  function autoRotate(){
  	let totalValues = $('.zuc-sixgrid-item');

@@ -515,26 +515,31 @@
 
 .organization-container{
 	display: grid;
-	grid-template-columns: 30% 30% 30%;
+	grid-template-columns: 25% 25% 25%;
 	justify-content: center;
 	grid-gap:2em 1em;
 	max-width:100%;
 }
 
 .org-logo{
-	width: 90%;
-    min-height: 350px;
+	width: 80%;
+    min-height: 300px;
+    height: auto;
     display: grid;
     justify-content: center;
     align-items: center;
 }
 .org-logo img{
-	width:70%;
+	width:90%;
 	display: table-cell;
 	max-width: 100%;
 	margin:0 auto;
 	padding:1em;
 	vertical-align: middle;
+}
+
+.org-logo >.width-60{
+	width:60%;
 }
 /*Join Zucora page*/
 .joinZucora-hero{
@@ -596,8 +601,6 @@
 	 padding: 13px;
 }
 
-
-
 .jobOpening-box{
 	width:80%;
 	display: block;
@@ -639,6 +642,16 @@
 	.culture-gallery-title > h2{
 		font-size:2em;
 	}
+
+	.org-logo{
+		height:auto;
+		min-height: auto;
+	}
+
+
+	.org-logo .width-60{
+		width:80%;
+	}
 }
 
 @media only screen and (min-width:641px) and (max-width:1024px) and (orientation:portrait) {
@@ -650,6 +663,14 @@
 	}
 	.background-image{
 		height:600px;
+	}
+
+	.org-logo{
+		height:auto;
+		min-height: auto;
+	}
+	.org-logo .width-60{
+		width:80%;
 	}
 }
 
@@ -757,7 +778,7 @@
 	}
 	.organization-container{
 		grid-template-columns: auto;
-		padding:2em;
+		padding:1em;
 	}
 	.organization-container > .culture-gallery-title{
 		padding:1em;
