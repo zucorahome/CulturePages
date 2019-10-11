@@ -435,6 +435,9 @@
 
 }
 
+.two-column-container{
+
+}
 .two-columns{
 	display: flex;
 	justify-content: space-around;
@@ -755,6 +758,10 @@
 		width:90%;
 	}
 
+	.two-column-container{
+		bottom: 5em;
+	}
+
 	.two-columns{
 		display: flex;
 		flex-direction: column;
@@ -891,6 +898,14 @@
 	}
 	.culture-gallery-title{
 		padding-left:1em;
+	}
+
+	.two-column-container{
+		bottom:10em;
+	}
+	.scroll-gallery-container{
+		position: relative;
+		bottom:3em;
 	}
 	.join-box{
 		width:50%;
