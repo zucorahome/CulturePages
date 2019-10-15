@@ -74,12 +74,27 @@ function sliderGallery(number){
 		},1000 );
 	});
 
-	//calling functions
-	getmaxWidth();
-
 	$(window).resize(function(){
 		getmaxWidth();
+		slickSlider();
 	});
+
+	function slickSlider(){
+		let screenSize = $(document).width();
+		if(screenSize <= 768 ){
+			$('.slider-gallery').slick();
+		}else{
+			$('.slider-gallery').slick({
+			  infinite: true,
+			  slidesToShow: 3,
+			  slidesToScroll: 1
+			});
+		}
+	}
+
+	//calling functions
+	getmaxWidth();
+	slickSlider();
 });
 
 

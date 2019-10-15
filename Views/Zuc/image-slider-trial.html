@@ -11,7 +11,9 @@
     <link href="../../Content/Zuc/styles/new_styles.css" rel="stylesheet">
     <!-- Just for this code example -->
     <link href="../../Content/Zuc/styles/image-slider.css" rel="stylesheet">
-    <link href="../../Content/Zuc/styles/member-center_style.css" rel="stylesheet"><!--[if lt IE 9]>
+    <link href="../../Content/Zuc/styles/member-center_style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!--[if lt IE 9]>
     <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!-- [ FONTS ]-->
@@ -29,7 +31,7 @@
     </script>
     <script src="../../Scripts/Zuc/js/Controllers/Utils.js">
     </script>
-    <script src="../../Scripts/Zuc/js/member-center.js">
+    <!-- <script src="../../Scripts/Zuc/js/member-center.js"> -->
     </script><!-- [ Alerts ]-->
 
     <script src="https://cdn.jsdelivr.net/alertifyjs/1.9.0/alertify.min.js">
@@ -218,24 +220,30 @@
     </div>
 <!-- Main page content-->
 <div class="slider-container">
-  <div class="left-slide">
+  <!-- <div class="left-slide">
       <a href="javascript:void(0)" title="Previous Review" onclick="">
       <img class="u-imgflip-hor culture-boxShadow" src="../../Images/Zuc/images/icons/icon-arrow.svg" alt="A small white arrow symbol pointing left">
-      </a>
+      </a> -->
   </div>
     <div class="slider-gallery">
-      <img src="../../Images/Zuc/images/culture/greg1.jpg" alt="" class="culture-boxShadow">
-      <img src="../../Images/Zuc/images/culture/blizzards1.jpg" alt="" class="culture-boxShadow">
-      <img src="../../Images/Zuc/images/culture/tree1.jpg" alt="" class="culture-boxShadow">
-      <img src="../../Images/Zuc/images/culture/culture4.jpg" alt="" class="culture-boxShadow">
-      <img src="../../Images/Zuc/images/culture/culture5.jpg" alt="" class="culture-boxShadow">
-      <img src="../../Images/Zuc/images/culture/culture6.jpg" alt="" class="culture-boxShadow">
+      <!-- <a href="javascript:void(0)" title="Previous Review" onclick="">
+      <img class="u-imgflip-hor culture-boxShadow" src="../../Images/Zuc/images/icons/icon-arrow.svg" alt="A small white arrow symbol pointing left">
+      </a> -->
+      <div class="slider-image"><img src="../../Images/Zuc/images/culture/greg1.jpg" alt="" class="culture-boxShadow"></div>
+      <div class="slider-image"><img src="../../Images/Zuc/images/culture/blizzards1.jpg" alt="" class="culture-boxShadow"></div>
+      <div class="slider-image"><img src="../../Images/Zuc/images/culture/tree1.jpg" alt="" class="culture-boxShadow"></div>
+      <div class="slider-image"><img src="../../Images/Zuc/images/culture/culture4.jpg" alt="" class="culture-boxShadow"></div>
+      <div class="slider-image"><img src="../../Images/Zuc/images/culture/culture5.jpg" alt="" class="culture-boxShadow"></div>
+      <div class="slider-image"><img src="../../Images/Zuc/images/culture/culture6.jpg" alt="" class="culture-boxShadow"></div>
+     <!--  <a href="javascript:void(0)" title="Previous Review" onclick="">
+        <img class="culture-boxShadow" src="../../Images/Zuc/images/icons/icon-arrow.svg" alt="A small white arrow symbol pointing left">
+        </a> -->
     </div>
-    <div class="right-slide">
+    <!-- <div class="right-slide">
         <a href="javascript:void(0)" title="Previous Review" onclick="">
         <img class="culture-boxShadow" src="../../Images/Zuc/images/icons/icon-arrow.svg" alt="A small white arrow symbol pointing left">
         </a>
-    </div>
+    </div> -->
 </div>
 <!-- Modal Container-->
 <div class="zuc-modal --video-modal" data-smarter-video onclick="toggleModal('[data-smarter-video]')">
@@ -300,6 +308,7 @@
    <!--  @*@if (LoadModal) { Html.RenderAction("ProductsServicesAvailabilityModal", "Zuc"); }*@ -->
     <script>new LTPublicUtils().ShowUI();</script>
     <script type="text/javascript" src="../../Content/Zuc/js/build9d66868d59cc90dfcd5c.js"></script></body>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   </body>
 
