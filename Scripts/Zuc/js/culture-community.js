@@ -82,12 +82,18 @@ function sliderGallery(number){
 	function slickSlider(){
 		let screenSize = $(document).width();
 		if(screenSize <= 768 ){
-			$('.slider-gallery').slick();
+			$('.slider-gallery').slick(
+				{
+				 	nextArrow: $('.right-slide'),
+		  			prevArrow: $('.left-slide')
+				});
 		}else{
 			$('.slider-gallery').slick({
 			  infinite: true,
 			  slidesToShow: 3,
-			  slidesToScroll: 1
+			  slidesToScroll: 1,
+			  nextArrow: $('.right-slide'),
+			  prevArrow: $('.left-slide')
 			});
 		}
 	}
